@@ -1,0 +1,235 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    border-style: dashed;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: thistle;
+    cursor: pointer;
+}
+#face{
+    position: absolute;
+    top: 35%;
+    left:45%;
+    height: 120px;
+    width:120px;
+    background: rebeccapurple;
+    border-radius: 80px;
+}
+#eyecase{
+    position: absolute;
+    top: 25%;
+    left:8%;
+    height: 40px;
+    width: 100px;
+    background: black;
+    border-radius: 80px;
+    border-style: dotted;
+    border-color: blanchedalmond;
+    border-width: 2px;
+}
+#leftEye{
+    position: absolute;
+    top: 30%;
+    left:25%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-radius: 80px;
+}
+#pupil1h{
+    position: absolute;
+    top: 40%;
+    left:21%;
+    height: 3px;
+    width: 9px;
+    background:blue;
+}
+#pupil1v{
+    position: absolute;
+    top: 25%;
+    left:35%;
+    height: 8px;
+    width: 3px;
+    background:blue;
+}
+#rightEye{      
+    position: absolute;
+    top: 30%;
+    left:60%;
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-radius: 80px;
+}
+#pupil2h{
+    position: absolute;
+    top: 40%;
+    left:21%;
+    height: 3px;
+    width: 9px;
+    background:blue;
+}
+#pupil2v{
+    position: absolute;
+    top: 25%;
+    left:35%;
+    height: 8px;
+    width: 3px;
+    background:blue;
+}
+#body1{
+    position: absolute;
+    top: 54%;
+    left:45%;
+    height: 50px;
+    width:124px;
+    background:repeating-linear-gradient(blue 30%,rebeccapurple );
+    border-top-left-radius: 80px;  
+    border-top-right-radius: 80px;
+}
+#body2{
+    position: absolute;
+    top: 62%;
+    left:45%;
+    height: 45px;
+    width:124px;
+    background:radial-gradient(blue 30%,rebeccapurple );
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#body3{
+    position: absolute;
+    top: 69%;
+    left:45%;
+    height: 45px;
+    width:124px;
+    background:radial-gradient(blue 30%,rebeccapurple );
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#leftArm1{
+    position: absolute;
+    top: 57.5%;
+    left:43%;
+    height: 60px;
+    width:24.5px;
+    background:rgb(42, 7, 77);
+    border-radius: 5px;
+}
+#leftArm2{
+    position: absolute;
+    top:59.5%;
+    left:41.15%;
+    height: 35px;
+    width:25px;
+    background:repeating-linear-gradient(blue 30%,rebeccapurple );
+    border-top-left-radius: 80px;  
+    border-bottom-left-radius: 80px; 
+}
+#rightArm1{
+    position: absolute;
+    top: 57.5%;
+    left:54.3%;
+    height: 60px;
+    width:24.5px;
+    background:rgb(42, 7, 77);
+    border-radius: 5px;
+}
+#rightArm2{
+    position: absolute;
+    top: 59.5%;
+    left:56.1%;
+    height: 35px;
+    width:25px;
+    background:repeating-linear-gradient(blue 30%,rebeccapurple );
+    border-top-right-radius: 80px;  
+    border-bottom-right-radius: 80px; 
+}
+#leftLeg{
+    position: absolute;
+    top: 76%;
+    left:46%;
+    width: 0;
+    height: 0;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 51px solid rgb(42, 7, 77);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;                     
+}
+#rightLeg{
+    position: absolute;
+    top: 76%;
+    left:49.5%;
+    width: 0;
+    height: 0;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 51px solid rgb(42, 7, 77);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#juggle{
+    position: absolute;
+    top: 46%;
+    left:42%;
+    transform: translate(-50%,-50%);
+    width:20px;
+    height: 20px;
+    text-align: center;
+}
+#juggle.ball{
+    position: absolute;
+    top: 46%;
+    left:42%;
+    height: 28px;
+    width: 28px;
+    background: rgb(189, 4, 4);
+    border-radius: 80px; 
+    animation:juggle 2.1s linear infinite;
+}
+#juggle.ball: nth-child(2){
+    animation-delay: -0.7s;
+}
+#juggle.ball: nth-child(3){
+    animation-delay: -1.4s;
+}
+@keyframes juggle{
+    0%{
+            transform: translateX(0px) translateY(0px);
+    }
+    12.5%{
+            transform: translateX(27.5px) translateY(-57px) scale(1.1);
+    }
+    25%{
+            transform: translateX(55px) translateY(0px);
+            animation-timing-function: ease-out;
+    }
+    37.5%{
+            transform: translateX(27.5px) translateY(57px);
+    }
+    50%{
+            transform: translateX(0px) translateY(0px);
+    }
+    62.5%{
+            transform: translateX(-27.5px) translateY(-57px) scale(1.1);
+            animation-timing-function: ease-in;
+    }
+    75%{
+            transform: translateX(-55px) translateY(0px);
+    }
+    87.5%{
+            transform: translateX(-27.5px) translateY(57px);
+    }
+    100%{
+            transform: translateX(-55px) translateY(0px);
+    }
+}
